@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="二维太阳系模拟预览">
+  <defs>
+    <radialGradient id="space" cx="50%" cy="50%" r="72%">
+      <stop offset="0%" stop-color="#162034"/>
+      <stop offset="54%" stop-color="#07101c"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="38%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#fff5be"/>
+      <stop offset="35%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#space)"/>
+  <g fill="#fff" opacity=".55">
+    <circle cx="84" cy="88" r="1.3"/><circle cx="216" cy="142" r="1"/><circle cx="348" cy="68" r="1.5"/>
+    <circle cx="520" cy="130" r="1"/><circle cx="690" cy="74" r="1.4"/><circle cx="882" cy="156" r="1"/>
+    <circle cx="1046" cy="82" r="1.6"/><circle cx="1128" cy="248" r="1"/><circle cx="156" cy="618" r="1.2"/>
+    <circle cx="312" cy="676" r="1"/><circle cx="486" cy="594" r="1.5"/><circle cx="754" cy="662" r="1"/>
+    <circle cx="964" cy="624" r="1.4"/><circle cx="1096" cy="526" r="1"/>
+  </g>
+  <g transform="translate(520 392)">
+    <g fill="none" stroke="#fff" stroke-opacity=".16">
+      <ellipse rx="58" ry="42"/><ellipse rx="88" ry="63"/><ellipse rx="120" ry="86"/>
+      <ellipse rx="155" ry="112"/><ellipse rx="215" ry="155"/><ellipse rx="275" ry="198"/>
+      <ellipse rx="330" ry="238"/><ellipse rx="382" ry="275"/>
+    </g>
+    <circle r="64" fill="#f97316" opacity=".16" filter="url(#glow)"/>
+    <circle r="20" fill="url(#sun)" filter="url(#glow)"/>
+    <g font-family="Segoe UI, Microsoft YaHei, Arial" font-size="15" fill="#f3f7fb" text-anchor="middle">
+      <circle cx="57" cy="8" r="4" fill="#b8b0a4"/><text x="57" y="-12">水星</text>
+      <circle cx="-45" cy="54" r="6" fill="#e6c27a"/><text x="-45" y="82">金星</text>
+      <circle cx="-59" cy="-75" r="7" fill="#4aa3ff"/><text x="-59" y="-96">地球</text>
+      <circle cx="27" cy="110" r="5" fill="#e66b47"/><text x="27" y="136">火星</text>
+      <circle cx="156" cy="-107" r="13" fill="#d9a66f"/><text x="156" y="-132">木星</text>
+      <g transform="translate(-265 -53)">
+        <ellipse rx="24" ry="9" fill="none" stroke="#e5d197" stroke-width="2" transform="rotate(-14)"/>
+        <circle r="11" fill="#e5d197"/>
+      </g>
+      <text x="-265" y="-78">土星</text>
+      <circle cx="230" cy="171" r="9" fill="#72d5dd"/><text x="230" y="200">天王星</text>
+      <circle cx="-360" cy="111" r="9" fill="#466bff"/><text x="-360" y="140">海王星</text>
+    </g>
+  </g>
+  <g transform="translate(820 86)">
+    <rect width="300" height="170" rx="8" fill="#09101c" fill-opacity=".78" stroke="#fff" stroke-opacity=".14"/>
+    <text x="24" y="42" fill="#5dd6c7" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="13" font-weight="700">SOLAR SYSTEM</text>
+    <text x="24" y="82" fill="#f3f7fb" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="30" font-weight="800">二维太阳系模拟</text>
+    <text x="24" y="124" fill="#9aa8b6" font-family="Segoe UI, Microsoft YaHei, Arial" font-size="16">速度控制 · 暂停 · 标签 · 轨迹</text>
+  </g>
+</svg>

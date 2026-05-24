@@ -1,0 +1,16 @@
+{
+  "name": "2d-solar-system-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static 2D solar system simulator built with HTML, CSS, and Canvas.",
+  "scripts": {
+    "start": "python -m http.server 4173 --bind 127.0.0.1"
+  },
+  "keywords": [
+    "solar-system",
+    "canvas",
+    "simulation",
+    "astronomy"
+  ],
+  "license": "UNLICENSED"
+}

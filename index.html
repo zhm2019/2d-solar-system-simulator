@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二维太阳系模拟器</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="sim-stage" aria-label="二维太阳系模拟器">
+        <canvas id="solarCanvas" aria-label="太阳系动画画布"></canvas>
+        <div class="hud top-left">
+          <div class="kicker">Solar System</div>
+          <h1>二维太阳系模拟器</h1>
+        </div>
+        <div class="hud top-right" id="planetInfo" aria-live="polite">
+          <span class="info-name">地球</span>
+          <span class="info-detail">轨道周期 365 天</span>
+        </div>
+      </section>
+
+      <aside class="control-panel" aria-label="模拟控制">
+        <div class="control-row">
+          <button class="icon-button" id="togglePause" type="button" aria-label="暂停或继续动画" title="暂停或继续">
+            <span id="pauseIcon">||</span>
+          </button>
+          <button class="icon-button" id="resetView" type="button" aria-label="重置视图" title="重置视图">
+            <span>↺</span>
+          </button>
+          <label class="toggle">
+            <input id="toggleLabels" type="checkbox" checked>
+            <span>标签</span>
+          </label>
+          <label class="toggle">
+            <input id="toggleTrails" type="checkbox" checked>
+            <span>轨迹</span>
+          </label>
+        </div>
+
+        <label class="slider-control" for="speedRange">
+          <span>速度</span>
+          <output id="speedValue" for="speedRange">40x</output>
+        </label>
+        <input id="speedRange" type="range" min="1" max="120" value="40">
+
+        <div class="planet-list" id="planetList" aria-label="行星列表"></div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
