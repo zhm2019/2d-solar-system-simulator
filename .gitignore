@@ -17,6 +17,7 @@ pnpm-debug.log*
 dist/
 build/
 .cache/
+.codex-tools/
 .parcel-cache/
 .vite/
 coverage/
