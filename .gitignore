@@ -18,6 +18,7 @@ dist/
 build/
 .cache/
 .codex-tools/
+.netlify/
 .parcel-cache/
 .vite/
 coverage/
